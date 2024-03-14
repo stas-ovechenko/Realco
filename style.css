@@ -63,6 +63,10 @@ body {
 	background-color: #fff;
 }
 
+.burg {
+	display: none;
+}
+
 .header_nav {
 	display: flex;
 	justify-content: space-between;
@@ -186,6 +190,10 @@ body {
 	margin-left: 15px;
 }
 
+.img_main_1024 {
+	display: none;
+}
+
 .how_it_works_content {
 	background-color: #fff;
 	margin-top: 20px;
@@ -204,12 +212,12 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	margin: 20px 0 60px 0;
+	word-wrap: break-word;
 }
 
 .how_it_works_text {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
 .find_property,
@@ -244,10 +252,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.comfort_first_text {
-	margin-left: 25px;
 }
 
 .comfort_first_p1 {
@@ -305,10 +309,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.quick_and_easy_text {
-	margin-right: 25px;
 }
 
 .quick_and_easy_p1 {
@@ -380,6 +380,10 @@ body {
 	margin-left: 10px;
 }
 
+.img_quick_1024 {
+	display: none;
+}
+
 .properties_content {
 	background-color: #F5F5F2;
 	margin-top: 20px;
@@ -402,7 +406,7 @@ body {
 	border-radius: 32px;
 }
 
-.properties_content h2 {
+.properties_title h2 {
 	color: #2A2C1F;
 	font-weight: 700;
 	font-size: 48px;
@@ -577,7 +581,6 @@ body {
 	transform: rotate(270deg);
 	margin-left: 10px;
 }
-
 
 .locations_explore_contact {
 	display: flex;
@@ -877,4 +880,622 @@ body {
 
 .subscribe a + a {
 	margin-left: 10px;
+}
+
+@media (max-width: 1280px) {
+	.container {
+		width: 1024px;
+	}
+
+	.main_content {
+		display: block;
+		text-align: center;
+		padding: 25px 0 50px 0;
+	}
+
+	.main_text {
+		margin-left: 0;
+		padding-bottom: 50px;
+	}
+	
+	.main_text h1 {
+		font-size: 54px;
+	}
+	
+	.main_text_p2 {
+		font-size: 18px;
+	}
+
+	.main_content img {
+		width: 45%;
+	}
+	
+	.img_main_1024 {
+		display: block;
+	}
+
+	.main_content div:last-child {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.how_it_works_content h2 {
+		font-size: 46px;
+	}
+	
+	.how_it_works_content p:nth-child(2) {
+		font-size: 16px;
+	}
+	
+	.get_your_keys  {
+		display: none;
+	}
+
+	.comfort_first_text h2 {
+		font-size: 46px;
+	}
+	
+	.comfort_first_p2 {
+		font-size: 16px;
+	}
+	
+	.comfort_first_text {
+		margin-left: 0;
+	}
+
+	.comfort_first_content div + img {
+		width: 45%;
+	}
+
+	.quick_and_easy_content > img:nth-child(1) {
+		display: none;
+	}
+	
+	.quick_and_easy_text {
+		margin-right: 0;
+	}
+	
+	.quick_and_easy_text h2 {
+		font-size: 46px;
+	}
+	
+	.quick_and_easy_p2 {
+		font-size: 16px;
+	}
+
+	.affordable_work div:last-child {
+		display: none;
+	}
+
+	.img_quick_1024 {
+		display: block;
+		width: 45%;
+	}
+
+	.properties_title h2 {
+		font-size: 46px;
+	}
+	
+	.properties_favorite_house3 {
+		display: none;
+	}
+
+	.locations_title {
+		font-size: 46px;
+	}
+	
+	.locations_discription {
+		font-size: 16px;
+	}
+
+	.familie_content h2 {
+		font-size: 46px;
+	}
+	
+	.familie_content p {
+		font-size: 16px;
+	}
+
+	.customer_content h2 {
+		font-size: 46px;
+	}
+	
+	.customer_content > p {
+		font-size: 16px;
+	}
+
+	.what_amber_say {
+		display: none;
+	}
+
+	.latest_posts_title h2 {
+		font-size: 46px;
+	}
+	
+	.latest_posts_discription li:first-child{
+		font-size: 16px;
+	}
+
+	.blog_posts3 {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 1024px) {
+	.container {
+		width: 768px;
+	}
+
+	.burg {
+		display: inline-block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		left: 0;
+		z-index: 3;
+		background: transparent;
+		border: none;
+	}
+
+	.burg span {
+		position: absolute;
+		background-color: #000;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+	}
+
+	.burg::before,
+	.burg::after {
+		content: '';
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+
+	.burg::before {
+		top: 0;
+	}
+
+	.burg::after {
+		bottom: 0;
+	}
+
+	.header_navigation,
+	.btn_property {
+		display: none;
+	}
+
+	.main_text_p1 {
+		font-size: 12px;
+	}
+	
+	.main_text h1 {
+		font-size: 50px;
+	}
+	
+	.main_text_p2 {
+		font-size: 16px;
+	}
+
+	.main_input {
+		font-size: 16px;
+	}
+	
+	.main_input_btn {
+		font-size: 16px;
+	}
+
+	.main_content img {
+		width: 45%;
+	}
+	
+	.img_main_1024 {
+		display: block;
+	}
+
+	.main_content div:last-child {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.how_it_works_content h2 {
+		font-size: 42px;
+	}
+	
+	.how_it_works_content p:nth-child(2) {
+		font-size: 14px;
+	}
+
+	.how_it_works_text {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	.find_property,
+	.make_a_deal {
+		width: 100%;
+		max-width: 405px;
+	}
+
+	.make_a_deal {
+		margin-top: 25px;
+	}
+	
+	.get_your_keys  {
+		display: none;
+	}
+
+	.comfort_first_p1 {
+		font-size: 12px;
+	}
+
+	.comfort_first_text h2 {
+		font-size: 42px;
+	}
+	
+	.comfort_first_p2 {
+		font-size: 14px;
+	}
+	
+	.comfort_first_text {
+		margin-left: 0;
+	}
+
+	.comfort_first_content div + img {
+		width: 45%;
+	}
+
+	.quick_and_easy_content > img:nth-child(1) {
+		display: none;
+	}
+	
+	.quick_and_easy_text {
+		margin-right: 0;
+	}
+
+	.quick_and_easy_p1 {
+		font-size: 12px;
+	}
+	
+	.quick_and_easy_text h2 {
+		font-size: 42px;
+	}
+	
+	.quick_and_easy_p2 {
+		font-size: 14px;
+	}
+
+	.affordable_work div {
+		display: none;
+	}
+
+	.img_quick_1024 {
+		display: block;
+		width: 45%;
+	}
+
+	.properties_title p {
+		font-size: 12px;
+	}
+
+	.properties_title h2 {
+		font-size: 42px;
+	}
+
+	.first_favorite_houses,
+	.second_favorite_houses {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.properties_favorite_house3,
+	.properties_favorite_house2 {
+		display: none;
+	}
+
+	.locations_title {
+		font-size: 42px;
+	}
+	
+	.locations_discription {
+		font-size: 14px;
+	}
+
+	.location_container3 {
+		display: none;
+	}
+
+	.familie_content h2 {
+		font-size: 42px;
+	}
+	
+	.familie_content p {
+		font-size: 14px;
+	}
+
+	.customer_content h2 {
+		font-size: 42px;
+	}
+	
+	.customer_content > p {
+		font-size: 14px;
+	}
+
+	.customer_container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.what_sarah_say {
+		margin-top: 25px;
+	}
+
+	.what_amber_say {
+		display: none;
+	}
+
+	.latest_posts_title h2 {
+		font-size: 42px;
+	}
+	
+	.latest_posts_discription li:first-child{
+		font-size: 14px;
+	}
+
+	.latest_posts_blog {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.blog_posts3,
+	.blog_posts2 {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 576px;
+	}
+
+	.main_text_p1 {
+		font-size: 10px;
+	}
+	
+	.main_text h1 {
+		font-size: 46px;
+	}
+	
+	.main_text_p2 {
+		font-size: 14px;
+	}
+
+	.main_input {
+		font-size: 14px;
+	}
+	
+	.main_input_btn {
+		font-size: 14px;
+	}
+
+	.how_it_works_content h2 {
+		font-size: 38px;
+	}
+	
+	.how_it_works_content p:nth-child(2) {
+		font-size: 12px;
+	}
+
+	.comfort_first_content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.comfort_first_text {
+		text-align: center;
+	}
+
+	.comfort_first_p1 {
+		font-size: 10px;
+	}
+
+	.comfort_first_text h2 {
+		font-size: 38px;
+	}
+	
+	.comfort_first_p2 {
+		font-size: 12px;
+	}
+	
+	.comfort_first_content div + img {
+		margin-top: 25px;
+	}
+
+	.quick_and_easy {
+		display: none;
+	}
+
+	.properties_title p {
+		font-size: 10px;
+	}
+
+	.properties_title h2 {
+		font-size: 38px;
+	}
+
+	.second_favorite_houses {
+		display: none;
+	}
+	
+	.locations_title {
+		font-size: 38px;
+	}
+	
+	.locations_discription {
+		font-size: 12px;
+	}
+
+	.familie_content h2 {
+		font-size: 38px;
+	}
+	
+	.familie_content p {
+		font-size: 12px;
+	}
+
+	.customer_content h2 {
+		font-size: 38px;
+	}
+	
+	.customer_content > p {
+		font-size: 12px;
+	}
+
+	.latest_posts_title h2 {
+		font-size: 38px;
+	}
+	
+	.latest_posts_discription li:first-child{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		width: 375px;
+	}
+
+	.main_text_p1 {
+		font-size: 8px;
+	}
+	
+	.main_text h1 {
+		font-size: 42px;
+	}
+	
+	.main_text_p2 {
+		font-size: 12px;
+	}
+
+	.main_input {
+		font-size: 12px;
+	}
+	
+	.main_input_btn {
+		font-size: 12px;
+	}
+
+	.how_it_works_content h2 {
+		font-size: 34px;
+	}
+	
+	.how_it_works_content p:nth-child(2) {
+		font-size: 10px;
+	}
+
+	.find_property,
+	.make_a_deal {
+		width: 50%;
+	}
+
+	.comfort_first_p1 {
+		font-size: 8px;
+	}
+
+	.comfort_first_text h2 {
+		font-size: 34px;
+	}
+	
+	.comfort_first_p2 {
+		font-size: 10px;
+	}
+
+	.comfort_first_text div p {
+		font-size: 14px;
+	}
+
+	.comfort_first_content div + img {
+		width: 100%;
+	}
+
+	.properties_title p {
+		font-size: 8px;
+	}
+
+	.properties_title h2 {
+		font-size: 34px;
+		text-align: center;
+	}
+
+	.properties_favorite_house1 > img {
+		width: 100%;
+	}
+	
+	.properties_explore_contact p {
+		font-size: 14px;
+	}
+
+	.locations_title {
+		font-size: 34px;
+	}
+	
+	.locations_discription {
+		font-size: 10px;
+	}
+
+	.locations_main_container {
+		flex-direction: column;
+	}
+
+	.location_container2 {
+		display: none;
+	}
+
+	.locations_explore_contact p {
+		font-size: 14px;
+	}
+
+	.familie_content h2 {
+		font-size: 34px;
+	}
+	
+	.familie_content p {
+		font-size: 10px;
+	}
+
+	.customer_content h2 {
+		font-size: 34px;
+	}
+	
+	.customer_content > p {
+		font-size: 10px;
+	}
+
+	.latest_posts_title h2 {
+		font-size: 34px;
+	}
+	
+	.latest_posts_discription li:first-child{
+		font-size: 10px;
+	}
+
+	.blog_posts1 > img {
+		width: 100%;
+	}
+
+	.footer_content ul {
+		display: none;
+	}
+}
+
+@media (max-width: 375px) {
+	.container {
+		width: 100%;
+	}
 }
